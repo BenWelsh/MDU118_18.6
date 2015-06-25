@@ -54,6 +54,11 @@ public:
 
 typedef std::vector<ShapeInfo> ShapeInfos;
 
+std::ostream& operator << (std::ostream& os, const Vector2& vector2)
+{
+	return os << vector2.x << "," << vector2.y;
+}
+
 std::ostream& operator << (std::ostream& os, const ShapeInfo& shapeInfo)
 {
 	return os << shapeInfo.name << ","
